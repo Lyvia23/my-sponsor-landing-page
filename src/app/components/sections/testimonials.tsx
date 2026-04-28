@@ -1,0 +1,91 @@
+import { GradientButton } from "@/components/ui/gradient-button";
+
+const TESTIMONIALS = [
+  {
+    id: 1,
+    quote:
+      "j'adore pouvoir trouver niche, c'est entièrement utile de sélectionner les créateurs en fonction de mon activité",
+    name: "Taboula Jordan",
+    role: "CEO de bildstudio",
+  },
+  {
+    id: 2,
+    quote:
+      "j'adore pouvoir trouver niche, c'est entièrement utile de sélectionner les créateurs en fonction de mon activité",
+    name: "Taboula Jordan",
+    role: "CEO de bildstudio",
+  },
+  {
+    id: 3,
+    quote:
+      "j'adore pouvoir trouver niche, c'est entièrement utile de sélectionner les créateurs en fonction de mon activité",
+    name: "Taboula Jordan",
+    role: "CEO de bildstudio",
+  },
+];
+
+export function Testimonials() {
+  return (
+    <section className="w-full bg-[#f75b02]">
+      <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center px-4 pb-12 pt-12 sm:px-6 sm:pb-16 sm:pt-[60px] lg:pb-20 lg:pt-[83px]">
+
+        <header className="mb-10 max-w-[589px] text-center sm:mb-16">
+          <h2 className="font-grotesk text-2xl font-bold leading-tight tracking-tight sm:text-xl lg:text-4xl xl:text-6xl">
+            <span className="text-white/70">Ils ont adoré,</span>
+            <br />
+            <span className="text-[#ededed]">soyez le prochain</span>
+          </h2>
+        </header>
+
+        {/* Grille avec blur sur les côtés */}
+        <div className="relative w-full">
+          {/* Glow gauche */}
+          <div
+            className="pointer-events-none absolute -left-[8%] top-1/2 -translate-y-1/2 h-[130%] w-[280px] rounded-full blur-[60px] sm:w-[350px] sm:blur-[80px]"
+            style={{ background: "rgba(255, 180, 59, 0.7)" }}
+            aria-hidden="true"
+          />
+
+          {/* Glow droit */}
+          <div
+            className="pointer-events-none absolute -right-[8%] top-1/2 -translate-y-1/2 h-[130%] w-[280px] rounded-full blur-[60px] sm:w-[350px] sm:blur-[80px]"
+            style={{ background: "rgba(255, 180, 50, 0.7)" }}
+            aria-hidden="true"
+          />
+          <div className="relative grid w-full grid-cols-1 gap-3 sm:gap-2.5 md:grid-cols-2 xl:grid-cols-3">
+            {TESTIMONIALS.map((t) => (
+              <article
+                key={t.id}
+                className="rounded-[20px] bg-white p-5 sm:rounded-[27px] sm:p-[25px]"
+              >
+                <div className="mb-6 flex flex-col gap-4 sm:mb-8 sm:gap-5">
+                  <div
+                    className="h-[44px] w-[44px] rounded-full bg-[#787878] sm:h-[52px] sm:w-[52px]"
+                    aria-hidden="true"
+                  />
+                  <p className="font-grotesk text-sm leading-snug tracking-tight text-[#7d7d7d] sm:text-base">
+                    {t.quote}
+                  </p>
+                </div>
+                <footer className="flex flex-col gap-1.5 sm:gap-2">
+                  <p className="font-grotesk text-base font-bold tracking-tight text-[#242424] sm:text-lg">
+                    {t.name}
+                  </p>
+                  <p className="font-grotesk text-xs tracking-tight text-[#242424] sm:text-sm">
+                    {t.role}
+                  </p>
+                </footer>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-8 sm:mt-12">
+          <GradientButton variant="purple" glow>
+            Essayer Maintenant – C&apos;est Gratuit
+          </GradientButton>
+        </div>
+      </div>
+    </section>
+  );
+}
