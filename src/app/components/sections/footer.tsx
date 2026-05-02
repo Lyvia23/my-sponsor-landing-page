@@ -23,7 +23,8 @@ export function Footer() {
         {/* Top row */}
         <div className="flex flex-col gap-8 pb-8 sm:flex-row sm:justify-between sm:gap-12 sm:pb-10">
           <div className="flex flex-col gap-3 sm:gap-4">
-            <Image src="/assets/images/logo.png" alt="MySponsor" width={198} height={40} className="h-[32px] w-auto sm:h-[40px]" />
+            
+            <Image src="/assets/images/logo.png" alt="MySponsor" width={198} height={40} className="h-[32px] w-auto sm:h-[36px] lg:h-[42px] object-contain object-left " />
             <p className="max-w-[220px] font-grotesk text-sm leading-relaxed tracking-tight text-white/30 sm:text-base">
               La plateforme #1 pour la mise en relation marques &amp; créateurs.
             </p>

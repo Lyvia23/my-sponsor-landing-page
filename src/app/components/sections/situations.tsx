@@ -49,12 +49,12 @@ export function Situations() {
           {/* Colonne gauche : titre + CTA */}
           <div className="flex flex-col gap-6">
             <header>
-              <h2 className="font-grotesk text-[22px] font-bold leading-tight tracking-tight text-white sm:text-[28px] lg:text-[32px]">
+              <div className="font-grotesk text-xl font-bold leading-tight tracking-tight text-white sm:text-2xl lg:text-3xl">
                 Si tu te reconnais dans{" "}
                 <span className="text-[#f75b02]">ces situations,</span>
                 <br />
                 voici les solutions
-              </h2>
+              </div>
             </header>
 
             {/* CTA card */}
@@ -63,7 +63,7 @@ export function Situations() {
                 src="/assets/images/Vector1.png"
                 alt=""
                 fill
-                className="object-cover object-left-top"
+                className="object-cover object-right"
                 aria-hidden="true"
               />
               <div className="relative z-10 flex min-h-[180px] flex-col items-start justify-between px-5 pb-5 pt-8 sm:min-h-[221px] sm:px-6 sm:pb-6 sm:pt-10">

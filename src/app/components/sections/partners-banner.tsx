@@ -1,14 +1,13 @@
 "use client";
-
 import Image from "next/image";
 
 const PARTNERS = [
-  { src: "/assets/images/tecno.png", alt: "Tecno", bg: "#1a1a2e" },
+  { src: "/assets/images/techno.png", alt: "Tecno", bg: "#1a1a2e" },
   { src: "/assets/images/yango.png", alt: "Yango", bg: "#e8001c" },
   { src: "/assets/images/orange.png", alt: "Orange", bg: "#ff6600" },
   { src: "/assets/images/mtn.png", alt: "MTN", bg: "#ffcc00" },
-  { src: "/assets/images/kiro.png", alt: "Kiro o Game", bg: "#1a1a2e" },
-  { src: "/assets/images/1xbet.png", alt: "1xBet", bg: "#1a3c6e" },
+  { src: "/assets/images/yango.png", alt: "Kiro o Game", bg: "#1a1a2e" },
+  { src: "/assets/images/1xtbet.png", alt: "1xBet", bg: "#1a3c6e" },
   { src: "/assets/images/itel.png", alt: "Itel", bg: "#e8001c" },
   { src: "/assets/images/blue.png", alt: "Blue", bg: "#0057b8" },
 ];
@@ -20,56 +19,43 @@ export function PartnersBanner() {
         Plus de 10K Sponsors actifs sur MySponsor
       </p>
 
-      {/* Wrapper — prend toute la largeur viewport */}
       <div className="relative mt-8 w-full overflow-hidden">
-
         {/* Fondu gauche */}
         <div
-          className="pointer-events-none absolute left-0 top-0 z-10 h-full w-[80px] sm:w-[200px]"
-          style={{
-            background: "linear-gradient(to right, #0d011d 0%, transparent 100%)",
-          }}
+          className="pointer-events-none absolute left-0 top-0 z-10 h-full w-[60px] sm:w-[160px]"
+          style={{ background: "linear-gradient(to right, #0d011d 0%, transparent 100%)" }}
         />
-
         {/* Fondu droit */}
         <div
-          className="pointer-events-none absolute right-0 top-0 z-10 h-full w-[80px] sm:w-[200px]"
-          style={{
-            background: "linear-gradient(to left, #0d011d 0%, transparent 100%)",
-          }}
+          className="pointer-events-none absolute right-0 top-0 z-10 h-full w-[60px] sm:w-[160px]"
+          style={{ background: "linear-gradient(to left, #0d011d 0%, transparent 100%)" }}
         />
 
-        {/* Track animé */}
-        <div
-          className="flex gap-4 py-4 sm:gap-8"
-          style={{
-            width: "max-content",
-            animation: "marquee 25s linear infinite",
-          }}
-        >
-          {[...PARTNERS, ...PARTNERS, ...PARTNERS, ...PARTNERS].map((partner, i) => (
-            <div
-              key={i}
-              className="flex h-[64px] w-[64px] shrink-0 overflow-hidden rounded-full sm:h-[90px] sm:w-[90px]"
-              style={{ backgroundColor: partner.bg }}
-            >
-              <Image
-                src={partner.src}
-                alt={partner.alt}
-                width={90}
-                height={90}
-                className="h-full w-full object-cover"
-              />
-            </div>
-          ))}
+        {/* Scroll sur mobile, centré sur desktop */}
+        <div className="scrollbar-none overflow-x-auto">
+          <div className="flex w-max items-center gap-4 px-8 py-4 sm:w-full sm:justify-center sm:px-0 sm:gap-6">
+            {PARTNERS.map((partner, i) => (
+              <div
+                key={i}
+                className="flex h-[64px] w-[64px] shrink-0 overflow-hidden rounded-full sm:h-[90px] sm:w-[90px]"
+                style={{ backgroundColor: partner.bg }}
+              >
+                <Image
+                  src={partner.src}
+                  alt={partner.alt}
+                  width={90}
+                  height={90}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
       <style jsx>{`
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
+        .scrollbar-none::-webkit-scrollbar { display: none; }
+        .scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
       `}</style>
     </section>
   );

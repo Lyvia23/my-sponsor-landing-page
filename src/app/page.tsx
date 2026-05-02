@@ -10,14 +10,12 @@ import { Faq } from "@/components/sections/faq";
 import { TopCreators } from "@/components/sections/top-creators";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
-import { PageBackground } from "@/components/layout/page-background";
 
 export default function Home() {
   return (
     <main className="relative w-full overflow-x-hidden bg-[#0d011d] text-white">
-      <PageBackground />
 
-      <div className="relative z-10 flex flex-col gap-10 sm:gap-16">
+      <div className="relative z-10 flex flex-col ">
         <Navbar />
         <Hero />
         <HeroScreenshot />
