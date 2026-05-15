@@ -6,7 +6,7 @@ const CREATORS = [
   {
     name: "Murielle Blanche",
     views: "+ 100 000 000 Likes",
-    image: "https://i.pravatar.cc/150?img=47",
+    image: "/assets/images/murielleblanche.jpeg",
     rank: "#1",
     badgeBg: "bg-[#f3b620]",
     badgeText: "text-black",
@@ -14,7 +14,7 @@ const CREATORS = [
   {
     name: "Claudel noubissie",
     views: "+ 70 000 000 Likes",
-    image: "https://i.pravatar.cc/150?img=11",
+    image: "/assets/images/claudelnoubissie.jpeg",
     rank: "#2",
     badgeBg: "bg-[#5312a4]",
     badgeText: "text-white",
@@ -22,7 +22,7 @@ const CREATORS = [
   {
     name: "Celeste victorien",
     views: "+ 67 000 000 Likes",
-    image: "https://i.pravatar.cc/150?img=32",
+    image: "/assets/images/celeste victorien.jpg",
     rank: "#3",
     badgeBg: "bg-[#9a9a9a]",
     badgeText: "text-black",
@@ -30,7 +30,7 @@ const CREATORS = [
   {
     name: "TIK DENGUE",
     views: "+ 60 000 000 Likes",
-    image: "https://i.pravatar.cc/150?img=53",
+    image: "/assets/images/tikdengue.jpeg",
     rank: "#4",
     badgeBg: "bg-[#d0abff]",
     badgeText: "text-black",
@@ -38,7 +38,7 @@ const CREATORS = [
   {
     name: "Bop Dylan ",
     views: "+ 56 000 000 Likes",
-    image: "https://i.pravatar.cc/150?img=68",
+    image: "/assets/images/bopdylan.jpg",
     rank: "#5",
     badgeBg: "bg-[#212121]",
     badgeText: "text-white",

@@ -1,4 +1,5 @@
 import { GradientButton } from "@/components/ui/gradient-button";
+import Image from "next/image";
 
 const TESTIMONIALS = [
   {
@@ -7,6 +8,7 @@ const TESTIMONIALS = [
       "Dans l’audiovisuel, la visibilité et la diffusion du contenu sont essentielles. MySponsor nous permet de collaborer plus facilement avec des créateurs afin de donner plus d’impact à nos productions et toucher une audience plus large de manière authentique.",
     name: "Taboula Jordan",
     role: "CEO de bildstudio",
+    image:"/assets/images/JordanTaboula.jpg"
   },
   {
     id: 2,
@@ -14,6 +16,7 @@ const TESTIMONIALS = [
       "Pour une entreprise, gagner en visibilité aujourd’hui passe aussi par les créateurs de contenu. MySponsor permet de mettre en avant nos projets plus rapidement et de toucher une audience ciblée de manière plus authentique.",
     name: "Bikele Franck",
     role: "Directeur Image de T&Co Real Estate et Écrivain",
+     image:"/assets/images/franckbikele.jpg"
   },
   {
     id: 3,
@@ -21,6 +24,7 @@ const TESTIMONIALS = [
       "Aujourd’hui, il ne suffit plus de créer du contenu : il faut aussi penser à de vraies solutions de monétisation pour permettre aux créateurs de vivre de leur travail. En Afrique, beaucoup de créateurs sont encore exclus ou limités par les systèmes de monétisation traditionnels. Avec MySponsor, notre objectif est de leur donner un accès plus simple aux opportunités de sponsoring et aux collaborations rémunérées.",
     name: "Tangoueta Emma",
     role: "CEO de Mysponsor",
+     image:"/assets/images/tangouetaemma.png"
   },
 ];
 
@@ -59,10 +63,13 @@ export function Testimonials() {
                 className="rounded-[20px] bg-white p-5 sm:rounded-[27px] sm:p-[25px]"
               >
                 <div className="mb-6 flex flex-col gap-4 sm:mb-8 sm:gap-5">
-                  <div
-                    className="h-[44px] w-[44px] rounded-full bg-[#787878] sm:h-[52px] sm:w-[52px]"
-                    aria-hidden="true"
-                  />
+                   <Image
+                                      src={t.image}
+                                      alt={t.name}
+                                      width={64}
+                                      height={64}
+                                      className="h-10 w-10 shrink-0 rounded-full object-cover sm:h-16 sm:w-16"
+                                    />
                   <p className="font-grotesk text-sm leading-snug tracking-tight text-[#7d7d7d] sm:text-base">
                     {t.quote}
                   </p>
