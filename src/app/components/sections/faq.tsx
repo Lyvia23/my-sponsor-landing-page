@@ -10,35 +10,31 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 const FAQ_ITEMS = [
   {
     id: "q1",
-    question: "A qui s'adresse MySponsor ?",
+    question: "Qu’est-ce que MySponsor ?",
     answer:
-      "Monétisez plus de contenus plus rapidement. Identifiez en quelques clics des sponsors parfaitement alignés avec votre audience et augmentez vos chances de partenariats rémunérés.",
+      "La plateforme permet aux influenceurs, streamers, créateurs UGC et médias de trouver des opportunités rémunérées, tandis que les entreprises, studios et sponsors peuvent découvrir des profils adaptés à leur audience et lancer des campagnes rapidement",
   },
   {
     id: "q2",
-    question: "Comment fonctionne les crédits ?",
-    answer: null,
+    question: "Faut-il avoir beaucoup d’abonnés ?",
+    answer: "Non. MySponsor valorise aussi les micro et nano influenceurs. Une audience engagée peut être plus importante qu’un grand nombre d’abonnés.",
   },
   {
     id: "q3",
-    question: "Comment contacter des sponsor ?",
-    answer: null,
+    question: "Quels types de collaborations peut-on trouver ?",
+    answer: "Les collaborations sur mysponsor peuvent inclure : des missions d’engagement sur les réseaux sociaux tels que  des campagnes d’acquisition ; des campagnes de likes ; des campagnes de commentaires ; des campagnes de re-publication et de partage ; des vidéos sponsorisées ; du contenu UGC et etc…",
   },
   {
     id: "q4",
-    question: "Comment trouver des sponsor",
-    answer: null,
+    question: "Quelle est la vision de MySponsor ?",
+    answer: "La vision de MySponsor est de rendre la monétisation digitale plus accessible aux créateurs, notamment en Afrique, en connectant les audiences aux opportunités de sponsoring.",
   },
   {
     id: "q5",
-    question: "Comment trouver des créateurs ?",
-    answer: null,
+    question: "Comment contacter le support ?",
+    answer: "Vous pouvez contacter l’équipe MySponsor directement via la plateforme ou par les moyens de contact disponibles sur le site.",
   },
-  {
-    id: "q6",
-    question: "Pourquoi devrais-je payer cet outil si je peux rechercher des sponsors gratuitement ?",
-    answer: null,
-  },
+  
 ];
 
 export function Faq() {

@@ -7,24 +7,24 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 const SITUATIONS = [
   {
     id: 0,
-    title: "Trop de vidéos non sponsorisées → des opportunités manquées",
+    title: "Trop de vidéos non sponsorisées = des opportunités manquées",
     description:
-      "Monétisez plus de contenus plus rapidement. Identifiez en quelques clics des sponsors parfaitement alignés avec votre audience et augmentez vos chances de partenariats rémunérés.",
+      "Utilisez nos outils de recherche avancés pour trouver rapidement des sponsors dans votre secteur. Filtrez par langue, secteur d'activité, public cible et bien plus encore. (Monétisez plus de contenus plus rapidement. Identifiez en quelques clics des sponsors parfaitement alignés avec votre audience et augmentez vos chances de partenariats rémunérés.)",
   },
   {
     id: 1,
-    title: "Perdre des heures à chercher des contacts de marques en ligne",
-    description: null,
+    title: "Vous attendez passivement que des sponsors vous contactent.",
+    description: "Prenez le contrôle de vos collaborations. Accédez à des sponsors réellement actifs et initiez des discussions au moment qui vous convient.",
   },
   {
     id: 2,
     title: "Perdre du temps avec des sponsors désintéressés",
-    description: null,
+    description: "Discuter uniquement avec des sponsors éprouver et vérifier qui ont déjà collaborer avec d'autres créateurs comme vous ) ( Collaborez uniquement avec des marques sérieuses. Échangez avec des sponsors déjà engagés dans l’influence marketing et maximisez vos chances de conclure des partenariats concrets.",
   },
   {
     id: 3,
     title: "Manque de visibilité sur le marché du sponsoring",
-    description: null,
+    description: "Soyez visible parmi les influenceurs ouvert à la collaboration parmi un vaste marché ) ( Augmentez votre visibilité auprès des marques. Positionnez votre profil devant des sponsors ouverts à la collaboration et multipliez les opportunités de partenariats.)",
   },
 ];
 

@@ -4,23 +4,23 @@ const TESTIMONIALS = [
   {
     id: 1,
     quote:
-      "j'adore pouvoir trouver niche, c'est entièrement utile de sélectionner les créateurs en fonction de mon activité",
+      "Dans l’audiovisuel, la visibilité et la diffusion du contenu sont essentielles. MySponsor nous permet de collaborer plus facilement avec des créateurs afin de donner plus d’impact à nos productions et toucher une audience plus large de manière authentique.",
     name: "Taboula Jordan",
     role: "CEO de bildstudio",
   },
   {
     id: 2,
     quote:
-      "j'adore pouvoir trouver niche, c'est entièrement utile de sélectionner les créateurs en fonction de mon activité",
-    name: "Taboula Jordan",
-    role: "CEO de bildstudio",
+      "Pour une entreprise, gagner en visibilité aujourd’hui passe aussi par les créateurs de contenu. MySponsor permet de mettre en avant nos projets plus rapidement et de toucher une audience ciblée de manière plus authentique.",
+    name: "Bikele Franck",
+    role: "Directeur Image de T&Co Real Estate et Écrivain",
   },
   {
     id: 3,
     quote:
-      "j'adore pouvoir trouver niche, c'est entièrement utile de sélectionner les créateurs en fonction de mon activité",
-    name: "Taboula Jordan",
-    role: "CEO de bildstudio",
+      "Aujourd’hui, il ne suffit plus de créer du contenu : il faut aussi penser à de vraies solutions de monétisation pour permettre aux créateurs de vivre de leur travail. En Afrique, beaucoup de créateurs sont encore exclus ou limités par les systèmes de monétisation traditionnels. Avec MySponsor, notre objectif est de leur donner un accès plus simple aux opportunités de sponsoring et aux collaborations rémunérées.",
+    name: "Tangoueta Emma",
+    role: "CEO de Mysponsor",
   },
 ];
 
